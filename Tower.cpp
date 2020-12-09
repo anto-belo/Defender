@@ -2,7 +2,6 @@
 #include "Bullet.h"
 #include "Enemy.h"
 #include "Game.h"
-#include "Definitions.h"
 
 #include <QPixmap>
 #include <QRectF>

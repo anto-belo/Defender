@@ -10,16 +10,22 @@ CONFIG += c++11
 
 SOURCES += \
     Bullet.cpp \
+    Button.cpp \
     Enemy.cpp \
     Game.cpp \
+    Tile.cpp \
+    Tilemap.cpp \
     Tower.cpp \
     main.cpp
 
 HEADERS += \
     Bullet.h \
+    Button.h \
     Definitions.h \
     Enemy.h \
     Game.h \
+    Tile.h \
+    Tilemap.h \
     Tower.h
 
 # Default rules for deployment.

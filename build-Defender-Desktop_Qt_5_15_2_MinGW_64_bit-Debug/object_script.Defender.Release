@@ -1,0 +1,14 @@
+release/Bullet.o
+release/Button.o
+release/Enemy.o
+release/Game.o
+release/Tile.o
+release/Tilemap.o
+release/Tower.o
+release/main.o
+release/qrc_res.o
+release/moc_Bullet.o
+release/moc_Button.o
+release/moc_Enemy.o
+release/moc_Game.o
+release/moc_Tower.o

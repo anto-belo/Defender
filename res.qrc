@@ -9,5 +9,16 @@
         <file>img/SimpleTower.png</file>
         <file>img/SimpleTowerBase.png</file>
         <file>img/SimpleTowerBullet.png</file>
+        <file>img/StrongEnemy.png</file>
+        <file>img/EnterTile.png</file>
+        <file>img/ExitTile.png</file>
+        <file>img/TrailTile.png</file>
+        <file>img/TowerTile.png</file>
+        <file>img/SplashScreen.jpg</file>
+        <file>img/MainMenu.jpg</file>
+        <file>img/PlayButton.png</file>
+        <file>img/PlayButtonHovered.png</file>
+        <file>img/QuitButton.png</file>
+        <file>img/QuitButtonHovered.png</file>
     </qresource>
 </RCC>

@@ -8,8 +8,7 @@ int main(int argc, char *argv[]){
 
     game = new Game();
     game->show();
-    game->start();
-    //game->showFullScreen(); NOTE finita la comedia
+    game->showSplashScreen();
 
     return a.exec();
 }
