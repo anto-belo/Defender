@@ -10,14 +10,18 @@ class Button : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     Button(QString path, QGraphicsItem * parent = NULL);
+    Button(QGraphicsItem * parent = NULL);
     void mousePressEvent(QGraphicsSceneMouseEvent * event);
-    void hoverEnterEvent(QGraphicsSceneHoverEvent * event);
-    void hoverLeaveEvent(QGraphicsSceneHoverEvent * event);
+    virtual void hoverEnterEvent(QGraphicsSceneHoverEvent * event);
+    virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event);
+    void setPicPaths(QString picPath);
+    QString getPicPath();
+    QString getPicPathHovered();
 signals:
     void clicked();
 private:
     QString picPath;
-    QString picHoveredPath;
+    QString picPathHovered;
 };
 
 #endif // BUTTON_H

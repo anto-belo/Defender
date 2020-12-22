@@ -12,7 +12,13 @@
 #include <QGraphicsView>
 #include <QGraphicsScene>
 #include <QMouseEvent>
+#include <QGraphicsPixmapItem>
+#include <QGraphicsTextItem>
+#include <QString>
 #include <QTimer>
+#include <QBrush>
+#include <QColor>
+#include <QFont>
 
 class TileMap;
 
@@ -25,14 +31,34 @@ public:
 
     QGraphicsScene * scene;
     TileMap * map;
+
+    /* Wave timer */
+    QTimer * waveTimer;
+    QGraphicsTextItem * timeLeftText;
+    QGraphicsPixmapItem * timeLeftCircle;
+    int timeLeft;
+
+    /* Player characteristics */
+    QGraphicsTextItem * healthText;
+    QGraphicsTextItem * waveText;
+    QGraphicsTextItem * moneyText;
     int health;
     int wave;
     int money;
-
 public slots:
     void showMainMenu();
-    void chooseLevelMenu();
     void start();
+
+    void drawPlayerCharacs();
+    void updateTime();
+    void initWaveTimer();
+
+private:
+    void startCountdown(int seconds);
+    void changeTimerColor(int curTime);
+    void startLevel();
+    void drawPanel();
+        void drawGUI();
 };
 
 #endif // GAME_H

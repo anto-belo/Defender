@@ -20,5 +20,14 @@
         <file>img/PlayButtonHovered.png</file>
         <file>img/QuitButton.png</file>
         <file>img/QuitButtonHovered.png</file>
+        <file>img/TowerTileHovered.png</file>
+        <file>img/heart.png</file>
+        <file>img/money.png</file>
+        <file>img/TimerB.png</file>
+        <file>img/TimerG.png</file>
+        <file>img/TimerR.png</file>
+        <file>img/wave.png</file>
+        <file>img/NextWaveButtonHovered.png</file>
+        <file>img/NextWaveButton.png</file>
     </qresource>
 </RCC>

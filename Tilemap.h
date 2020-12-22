@@ -1,7 +1,6 @@
 #ifndef TILEMAP_H
 #define TILEMAP_H
 
-#include "Game.h"
 #include "Tower.h"
 #include "Tile.h"
 #include "Definitions.h"

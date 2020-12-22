@@ -1,4 +1,5 @@
 #include "Tilemap.h"
+#include "Game.h"
 
 extern Game * game;
 
@@ -6,10 +7,6 @@ TileMap::TileMap(int xStart, int yStart, const int width, const int height, cons
     int curX = xStart;
     int curY = yStart;
     for (int i = 0; i < width * height; i++) {
-//        if (i % width == 0) {
-//            curX = xStart;
-//            curY += TILE_SIZE;
-//        }
         curX = xStart + TILE_SIZE * (i % width);
         curY = yStart + TILE_SIZE * (i / width);
         Tile * tile = new Tile(curX, curY, mapGenCoords[i]);
