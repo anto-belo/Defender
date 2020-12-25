@@ -52,10 +52,10 @@ OBJECTS_DIR   = release
 
 SOURCES       = ..\Bullet.cpp \
 		..\Button.cpp \
+		..\Buttoncard.cpp \
 		..\Enemy.cpp \
 		..\Game.cpp \
 		..\Tile.cpp \
-		..\Tilemap.cpp \
 		..\Tower.cpp \
 		..\main.cpp release\qrc_res.cpp \
 		release\moc_Bullet.cpp \
@@ -65,10 +65,10 @@ SOURCES       = ..\Bullet.cpp \
 		release\moc_Tower.cpp
 OBJECTS       = release/Bullet.o \
 		release/Button.o \
+		release/Buttoncard.o \
 		release/Enemy.o \
 		release/Game.o \
 		release/Tile.o \
-		release/Tilemap.o \
 		release/Tower.o \
 		release/main.o \
 		release/qrc_res.o \
@@ -80,17 +80,17 @@ OBJECTS       = release/Bullet.o \
 
 DIST          =  ..\Bullet.h \
 		..\Button.h \
+		..\Buttoncard.h \
 		..\Definitions.h \
 		..\Enemy.h \
 		..\Game.h \
 		..\Tile.h \
-		..\Tilemap.h \
 		..\Tower.h ..\Bullet.cpp \
 		..\Button.cpp \
+		..\Buttoncard.cpp \
 		..\Enemy.cpp \
 		..\Game.cpp \
 		..\Tile.cpp \
-		..\Tilemap.cpp \
 		..\Tower.cpp \
 		..\main.cpp
 QMAKE_TARGET  = Defender
@@ -112,10 +112,10 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) Defender.zip $(SOURCES) $(DIST) ..\..\Defender.pro ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\spec_pre.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\qdevice.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\device_config.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\sanitize.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\gcc-base.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\g++-base.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\angle.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\win32\windows_vulkan_sdk.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\windows-vulkan.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\g++-win32.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\windows-desktop.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\qconfig.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3danimation.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3danimation_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dcore.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dcore_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dextras.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dextras_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dinput.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dinput_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dlogic.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dlogic_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquick.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquick_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickanimation.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickextras.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickextras_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickinput.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickinput_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickrender.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickrender_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickscene2d.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3drender.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3drender_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_accessibility_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axbase.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axbase_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axcontainer.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axserver.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axserver_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bluetooth.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bootstrap_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_concurrent.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_core.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_core_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_dbus.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_dbus_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designer.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designer_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_edid_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_egl_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_fb_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_fontdatabase_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gamepad.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gamepad_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gui.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gui_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_help.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_help_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_location.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_location_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimedia.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_network.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_network_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_nfc.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_nfc_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_opengl.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_opengl_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_openglextensions.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_openglextensions_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_packetprotocol_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_platformcompositor_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioning.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioning_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioningquick.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioningquick_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_printsupport.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qml.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qml_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmldebug_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmldevtools_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlmodels.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlmodels_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmltest.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlworkerscript.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickshapes_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quicktemplates2.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_remoteobjects.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_remoteobjects_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_repparser.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_repparser_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scxml.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scxml_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sensors.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sensors_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialbus.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialbus_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialport.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialport_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sql.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sql_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_svg.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_svg_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_testlib.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_testlib_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_texttospeech.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_texttospeech_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_theme_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uiplugin.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uitools.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uitools_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_vulkan_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_webchannel.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_websockets.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_websockets_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_widgets.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_widgets_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_winextras.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_winextras_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xml.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xml_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xmlpatterns.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xmlpatterns_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_zlib_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\qt_functions.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\qt_config.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\win32-g++\qmake.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\spec_post.prf .qmake.stash ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\exclusive_builds.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\toolchain.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\default_pre.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\win32\default_pre.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\resolve_config.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\exclusive_builds_post.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\default_post.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\build_pass.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\qml_debug.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\precompile_header.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\warn_on.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\qt.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\resources_functions.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\resources.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\moc.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\win32\opengl.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\uic.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\qmake_use.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\file_copies.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\win32\windows.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\testcase_targets.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\exceptions.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\yacc.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\lex.prf ..\Defender.pro ..\res.qrc ..\..\..\..\Qt\5.15.2\mingw81_64\lib\Qt5Widgets.prl ..\..\..\..\Qt\5.15.2\mingw81_64\lib\Qt5Gui.prl ..\..\..\..\Qt\5.15.2\mingw81_64\lib\Qt5Core.prl ..\..\..\..\Qt\5.15.2\mingw81_64\lib\qtmain.prl   ..\res.qrc ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\data\dummy.cpp ..\Bullet.h ..\Button.h ..\Definitions.h ..\Enemy.h ..\Game.h ..\Tile.h ..\Tilemap.h ..\Tower.h  ..\Bullet.cpp ..\Button.cpp ..\Enemy.cpp ..\Game.cpp ..\Tile.cpp ..\Tilemap.cpp ..\Tower.cpp ..\main.cpp     
+	$(ZIP) Defender.zip $(SOURCES) $(DIST) ..\..\Defender.pro ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\spec_pre.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\qdevice.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\device_config.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\sanitize.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\gcc-base.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\g++-base.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\angle.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\win32\windows_vulkan_sdk.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\windows-vulkan.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\g++-win32.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\common\windows-desktop.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\qconfig.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3danimation.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3danimation_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dcore.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dcore_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dextras.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dextras_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dinput.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dinput_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dlogic.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dlogic_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquick.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquick_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickanimation.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickextras.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickextras_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickinput.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickinput_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickrender.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickrender_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickscene2d.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3drender.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_3drender_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_accessibility_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axbase.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axbase_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axcontainer.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axserver.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_axserver_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bluetooth.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_bootstrap_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_concurrent.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_core.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_core_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_dbus.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_dbus_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designer.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designer_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_edid_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_egl_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_fb_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_fontdatabase_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gamepad.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gamepad_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gui.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_gui_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_help.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_help_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_location.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_location_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimedia.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_network.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_network_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_nfc.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_nfc_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_opengl.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_opengl_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_openglextensions.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_openglextensions_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_packetprotocol_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_platformcompositor_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioning.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioning_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioningquick.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_positioningquick_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_printsupport.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qml.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qml_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmldebug_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmldevtools_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlmodels.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlmodels_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmltest.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlworkerscript.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quick_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickshapes_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quicktemplates2.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_remoteobjects.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_remoteobjects_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_repparser.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_repparser_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scxml.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_scxml_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sensors.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sensors_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialbus.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialbus_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialport.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_serialport_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sql.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_sql_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_svg.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_svg_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_testlib.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_testlib_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_texttospeech.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_texttospeech_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_theme_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uiplugin.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uitools.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_uitools_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_vulkan_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_webchannel.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_websockets.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_websockets_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_widgets.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_widgets_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_winextras.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_winextras_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xml.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xml_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xmlpatterns.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_xmlpatterns_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\modules\qt_lib_zlib_private.pri ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\qt_functions.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\qt_config.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\win32-g++\qmake.conf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\spec_post.prf .qmake.stash ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\exclusive_builds.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\toolchain.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\default_pre.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\win32\default_pre.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\resolve_config.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\exclusive_builds_post.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\default_post.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\build_pass.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\qml_debug.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\precompile_header.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\warn_on.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\qt.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\resources_functions.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\resources.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\moc.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\win32\opengl.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\uic.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\qmake_use.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\file_copies.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\win32\windows.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\testcase_targets.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\exceptions.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\yacc.prf ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\lex.prf ..\Defender.pro ..\res.qrc ..\..\..\..\Qt\5.15.2\mingw81_64\lib\Qt5Widgets.prl ..\..\..\..\Qt\5.15.2\mingw81_64\lib\Qt5Gui.prl ..\..\..\..\Qt\5.15.2\mingw81_64\lib\Qt5Core.prl ..\..\..\..\Qt\5.15.2\mingw81_64\lib\qtmain.prl   ..\res.qrc ..\..\..\..\Qt\5.15.2\mingw81_64\mkspecs\features\data\dummy.cpp ..\Bullet.h ..\Button.h ..\Buttoncard.h ..\Definitions.h ..\Enemy.h ..\Game.h ..\Tile.h ..\Tower.h  ..\Bullet.cpp ..\Button.cpp ..\Buttoncard.cpp ..\Enemy.cpp ..\Game.cpp ..\Tile.cpp ..\Tower.cpp ..\main.cpp     
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\Bullet.o release\Button.o release\Enemy.o release\Game.o release\Tile.o release\Tilemap.o release\Tower.o release\main.o release\qrc_res.o release\moc_Bullet.o release\moc_Button.o release\moc_Enemy.o release\moc_Game.o release\moc_Tower.o
+	-$(DEL_FILE) release\Bullet.o release\Button.o release\Buttoncard.o release\Enemy.o release\Game.o release\Tile.o release\Tower.o release\main.o release\qrc_res.o release\moc_Bullet.o release\moc_Button.o release\moc_Enemy.o release\moc_Game.o release\moc_Tower.o
 
 distclean: clean 
 	-$(DEL_FILE) .qmake.stash
@@ -137,35 +137,71 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_res.cpp
 release/qrc_res.cpp: ../res.qrc \
 		../../../../Qt/5.15.2/mingw81_64/bin/rcc.exe \
-		../img/MainMenu.jpg \
-		../img/SimpleTowerBase.png \
-		../img/SimpleTowerBullet.png \
-		../img/heart.png \
-		../img/AirTower.png \
-		../img/TowerTileHovered.png \
-		../img/AirEnemy.png \
-		../img/ExitTile.png \
-		../img/EnterTile.png \
+		../img/AirTowerIcoHovered.png \
 		../img/TimerB.png \
-		../img/AirTowerBullet.png \
-		../img/PlayButtonHovered.png \
-		../img/SplashScreen.jpg \
-		../img/money.png \
-		../img/TrailTile.png \
-		../img/SimpleTower.png \
-		../img/TimerG.png \
-		../img/AirTowerBase.png \
-		../img/QuitButtonHovered.png \
-		../img/SimpleEnemy.png \
-		../img/wave.png \
-		../img/PlayButton.png \
 		../img/QuitButton.png \
 		../img/StrongEnemy.png \
-		../img/BossEnemy.png \
-		../img/NextWaveButtonHovered.png \
+		../img/SimpleTowerBullet.png \
+		../img/AirTower.png \
+		../img/AirTowerBullet.png \
+		../img/ExitTile.png \
+		../img/UpgradeFireRateHovered.png \
+		../img/UniTowerCharacsIco.png \
+		../img/UniTileHovered.png \
+		../img/MainMenu.jpg \
+		../img/PlayButton.png \
+		../img/SimpleTowerCharacsIco.png \
+		../img/AirTowerCharacsIco.png \
+		../img/UpgradeDelete.png \
+		../img/SimpleEnemy.png \
+		../img/UpgradeFireRateBlocked.png \
+		../img/UniTile.png \
+		../img/wave.png \
 		../img/TimerR.png \
+		../img/UniTowerIco.png \
+		../img/UpgradeRangeRadiusBlocked.png \
+		../img/UniTower.png \
+		../img/heart.png \
+		../img/UniTileChosen.png \
+		../img/TowerTileHovered.png \
+		../img/UpgradeDmg.png \
+		../img/SimpleTower.png \
+		../img/PlayButtonHovered.png \
+		../img/SimpleTowerIcoHovered.png \
+		../img/TimerG.png \
+		../img/SimpleTileChosen.png \
+		../img/SplashScreen.jpg \
+		../img/MenuButtonHovered.png \
+		../img/TowerTile.png \
+		../img/UniTowerIcoBlocked.png \
+		../img/SimpleTileHovered.png \
+		../img/QuitButtonHovered.png \
+		../img/SimpleTowerIcoBlocked.png \
 		../img/NextWaveButton.png \
-		../img/TowerTile.png
+		../img/AirTileHovered.png \
+		../img/AirTowerIcoBlocked.png \
+		../img/UpgradeRangeRadius.png \
+		../img/UniTowerBullet.png \
+		../img/UpgradeFireRate.png \
+		../img/UpgradeDeleteHovered.png \
+		../img/UpgradeRangeRadiusHovered.png \
+		../img/TowerTileChosen.png \
+		../img/UpgradeDmgHovered.png \
+		../img/NextWaveButtonHovered.png \
+		../img/AirTowerIco.png \
+		../img/EnterTile.png \
+		../img/SimpleTile.png \
+		../img/TrailTile.png \
+		../img/BossEnemy.png \
+		../img/money.png \
+		../img/AirTileChosen.png \
+		../img/UpgradeDmgBlocked.png \
+		../img/SimpleTowerIco.png \
+		../img/NextWaveButtonBlocked.png \
+		../img/UniTowerIcoHovered.png \
+		../img/AirTile.png \
+		../img/MenuButton.png \
+		../img/AirEnemy.png
 	D:\Qt\5.15.2\mingw81_64\bin\rcc.exe -name res ..\res.qrc -o release\qrc_res.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -178,8 +214,7 @@ compiler_moc_header_make_all: release/moc_Bullet.cpp release/moc_Button.cpp rele
 compiler_moc_header_clean:
 	-$(DEL_FILE) release\moc_Bullet.cpp release\moc_Button.cpp release\moc_Enemy.cpp release\moc_Game.cpp release\moc_Tower.cpp
 release/moc_Bullet.cpp: ../Bullet.h \
-		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
@@ -268,17 +303,15 @@ release/moc_Bullet.cpp: ../Bullet.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
 		release/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	D:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include D:/User/Desktop/Defender/build-Defender-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -ID:/User/Desktop/Defender -ID:/Qt/5.15.2/mingw81_64/include -ID:/Qt/5.15.2/mingw81_64/include/QtWidgets -ID:/Qt/5.15.2/mingw81_64/include/QtGui -ID:/Qt/5.15.2/mingw81_64/include/QtANGLE -ID:/Qt/5.15.2/mingw81_64/include/QtCore -I. -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -ID:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Bullet.h -o release\moc_Bullet.cpp
 
 release/moc_Button.cpp: ../Button.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
@@ -300,6 +333,11 @@ release/moc_Button.cpp: ../Button.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
@@ -328,12 +366,6 @@ release/moc_Button.cpp: ../Button.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
@@ -365,19 +397,15 @@ release/moc_Button.cpp: ../Button.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicssceneevent.h \
 		release/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	D:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include D:/User/Desktop/Defender/build-Defender-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -ID:/User/Desktop/Defender -ID:/Qt/5.15.2/mingw81_64/include -ID:/Qt/5.15.2/mingw81_64/include/QtWidgets -ID:/Qt/5.15.2/mingw81_64/include/QtGui -ID:/Qt/5.15.2/mingw81_64/include/QtANGLE -ID:/Qt/5.15.2/mingw81_64/include/QtCore -I. -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -ID:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Button.h -o release\moc_Button.cpp
 
 release/moc_Enemy.cpp: ../Enemy.h \
-		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
@@ -399,6 +427,11 @@ release/moc_Enemy.cpp: ../Enemy.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
@@ -427,12 +460,6 @@ release/moc_Enemy.cpp: ../Enemy.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
@@ -464,20 +491,15 @@ release/moc_Enemy.cpp: ../Enemy.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QList \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QPointF \
 		release/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	D:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include D:/User/Desktop/Defender/build-Defender-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -ID:/User/Desktop/Defender -ID:/Qt/5.15.2/mingw81_64/include -ID:/Qt/5.15.2/mingw81_64/include/QtWidgets -ID:/Qt/5.15.2/mingw81_64/include/QtGui -ID:/Qt/5.15.2/mingw81_64/include/QtANGLE -ID:/Qt/5.15.2/mingw81_64/include/QtCore -I. -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -ID:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Enemy.h -o release\moc_Enemy.cpp
 
 release/moc_Game.cpp: ../Game.h \
-		../Tile.h \
-		../Button.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../Definitions.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
@@ -499,16 +521,25 @@ release/moc_Game.cpp: ../Game.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringliteral.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringalgorithms.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringview.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringbuilder.h \
+		../Tile.h \
+		../Button.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiterator.h \
@@ -527,12 +558,6 @@ release/moc_Game.cpp: ../Game.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
@@ -564,17 +589,10 @@ release/moc_Game.cpp: ../Game.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicssceneevent.h \
 		../Tower.h \
-		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsEllipseItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QPointF \
-		../Tilemap.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QList \
 		../Bullet.h \
 		../Enemy.h \
+		../Buttoncard.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsView \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsview.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainter.h \
@@ -600,26 +618,18 @@ release/moc_Game.cpp: ../Game.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsscene.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsScene \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsTextItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTimer \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtimer.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QBrush \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QColor \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QFont \
 		release/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	D:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include D:/User/Desktop/Defender/build-Defender-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -ID:/User/Desktop/Defender -ID:/Qt/5.15.2/mingw81_64/include -ID:/Qt/5.15.2/mingw81_64/include/QtWidgets -ID:/Qt/5.15.2/mingw81_64/include/QtGui -ID:/Qt/5.15.2/mingw81_64/include/QtANGLE -ID:/Qt/5.15.2/mingw81_64/include/QtCore -I. -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -ID:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Game.h -o release\moc_Game.cpp
 
 release/moc_Tower.cpp: ../Tower.h \
-		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
@@ -641,6 +651,11 @@ release/moc_Tower.cpp: ../Tower.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
@@ -669,12 +684,6 @@ release/moc_Tower.cpp: ../Tower.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
@@ -706,9 +715,6 @@ release/moc_Tower.cpp: ../Tower.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsEllipseItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QPointF \
 		release/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	D:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include D:/User/Desktop/Defender/build-Defender-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -ID:/User/Desktop/Defender -ID:/Qt/5.15.2/mingw81_64/include -ID:/Qt/5.15.2/mingw81_64/include/QtWidgets -ID:/Qt/5.15.2/mingw81_64/include/QtGui -ID:/Qt/5.15.2/mingw81_64/include/QtANGLE -ID:/Qt/5.15.2/mingw81_64/include/QtCore -I. -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -ID:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Tower.h -o release\moc_Tower.cpp
@@ -732,8 +738,7 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 ####### Compile
 
 release/Bullet.o: ../Bullet.cpp ../Bullet.h \
-		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
@@ -822,9 +827,9 @@ release/Bullet.o: ../Bullet.cpp ../Bullet.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QPixmap \
+		../Definitions.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
+		../Enemy.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTimer \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtimer.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h \
@@ -832,10 +837,10 @@ release/Bullet.o: ../Bullet.cpp ../Bullet.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Bullet.o ..\Bullet.cpp
 
 release/Button.o: ../Button.cpp ../Button.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
@@ -857,6 +862,11 @@ release/Button.o: ../Button.cpp ../Button.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
@@ -885,12 +895,6 @@ release/Button.o: ../Button.cpp ../Button.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
@@ -921,18 +925,15 @@ release/Button.o: ../Button.cpp ../Button.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgb.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicssceneevent.h
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Button.o ..\Button.cpp
 
-release/Enemy.o: ../Enemy.cpp ../Enemy.h \
-		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+release/Buttoncard.o: ../Buttoncard.cpp ../Buttoncard.h \
+		../Button.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
@@ -954,6 +955,11 @@ release/Enemy.o: ../Enemy.cpp ../Enemy.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
@@ -982,12 +988,6 @@ release/Enemy.o: ../Enemy.cpp ../Enemy.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
@@ -1019,10 +1019,166 @@ release/Enemy.o: ../Enemy.cpp ../Enemy.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
+		../Game.h \
+		../Definitions.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
+		../Tile.h \
+		../Tower.h \
+		../Bullet.h \
+		../Enemy.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsView \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsview.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainter.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpen.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbrush.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontinfo.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qscrollarea.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpalette.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qkeysequence.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qevent.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurl.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurlquery.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfile.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTimer \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtimer.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Buttoncard.o ..\Buttoncard.cpp
+
+release/Enemy.o: ../Enemy.cpp ../Enemy.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QList \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QPointF \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QLineF \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtcore-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsystemdetection.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qprocessordetection.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcompilerdetection.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtypeinfo.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsysinfo.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlogging.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qflags.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasicatomic.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qgenericatomic.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_cxx11.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_msvc.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobalstatic.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringliteral.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringalgorithms.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringview.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringbuilder.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiterator.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhashfunctions.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpair.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvector.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainertools_impl.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpoint.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearraylist.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlist.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregexp.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringmatcher.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreevent.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qscopedpointer.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmetatype.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhash.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtextstream.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiodevice.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlocale.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qshareddata.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qset.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontiguouscache.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrect.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmargins.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsize.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainterpath.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qmatrix.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpolygon.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qregion.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdatastream.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qline.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtransform.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixmap.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpaintdevice.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcolor.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgb.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
+		../Definitions.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
+		../Game.h \
+		../Tile.h \
+		../Button.h \
+		../Tower.h \
+		../Bullet.h \
+		../Buttoncard.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsView \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsview.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainter.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpen.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbrush.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontinfo.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qscrollarea.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpalette.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qkeysequence.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qevent.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurl.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurlquery.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfile.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsscene.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTimer \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtimer.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h \
@@ -1030,12 +1186,10 @@ release/Enemy.o: ../Enemy.cpp ../Enemy.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Enemy.o ..\Enemy.cpp
 
 release/Game.o: ../Game.cpp ../Game.h \
-		../Tile.h \
-		../Button.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../Definitions.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
@@ -1057,16 +1211,25 @@ release/Game.o: ../Game.cpp ../Game.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringliteral.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringalgorithms.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringview.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringbuilder.h \
+		../Tile.h \
+		../Button.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiterator.h \
@@ -1085,12 +1248,6 @@ release/Game.o: ../Game.cpp ../Game.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
@@ -1122,17 +1279,10 @@ release/Game.o: ../Game.cpp ../Game.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicssceneevent.h \
 		../Tower.h \
-		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsEllipseItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QPointF \
-		../Tilemap.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QList \
 		../Bullet.h \
 		../Enemy.h \
+		../Buttoncard.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsView \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsview.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainter.h \
@@ -1158,24 +1308,17 @@ release/Game.o: ../Game.cpp ../Game.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsscene.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsScene \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsTextItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTimer \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtimer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QBrush \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QColor \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QFont
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Game.o ..\Game.cpp
 
 release/Tile.o: ../Tile.cpp ../Tile.h \
 		../Button.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
@@ -1197,6 +1340,11 @@ release/Tile.o: ../Tile.cpp ../Tile.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
@@ -1225,12 +1373,6 @@ release/Tile.o: ../Tile.cpp ../Tile.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
@@ -1262,162 +1404,48 @@ release/Tile.o: ../Tile.cpp ../Tile.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicssceneevent.h \
 		../Tower.h \
+		../Game.h \
 		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsEllipseItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QPointF
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
+		../Bullet.h \
+		../Enemy.h \
+		../Buttoncard.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsView \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsview.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainter.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpen.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbrush.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontinfo.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qscrollarea.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpalette.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qkeysequence.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qevent.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurl.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurlquery.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfile.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsscene.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTimer \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtimer.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Tile.o ..\Tile.cpp
 
-release/Tilemap.o: ../Tilemap.cpp ../Tilemap.h \
-		../Tower.h \
-		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtcore-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsystemdetection.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qprocessordetection.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcompilerdetection.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtypeinfo.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsysinfo.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlogging.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qflags.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasicatomic.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_bootstrap.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qgenericatomic.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_cxx11.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_msvc.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobalstatic.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringliteral.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringalgorithms.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringview.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringbuilder.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiterator.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhashfunctions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpair.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvector.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainertools_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpoint.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearraylist.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlist.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregexp.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringmatcher.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreevent.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qscopedpointer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmetatype.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhash.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtextstream.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiodevice.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlocale.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qshareddata.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qset.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontiguouscache.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrect.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmargins.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsize.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainterpath.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qmatrix.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpolygon.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qregion.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdatastream.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qline.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtransform.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixmap.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpaintdevice.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcolor.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgb.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsEllipseItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QPointF \
-		../Tile.h \
-		../Button.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicssceneevent.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QList \
-		../Game.h \
-		../Bullet.h \
-		../Enemy.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsView \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsview.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainter.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpen.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbrush.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontinfo.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qscrollarea.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpalette.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qkeysequence.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qevent.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurlquery.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfile.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsscene.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsScene \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsTextItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTimer \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtimer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QBrush \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QColor \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QFont
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Tilemap.o ..\Tilemap.cpp
-
 release/Tower.o: ../Tower.cpp ../Tower.h \
-		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
@@ -1439,6 +1467,11 @@ release/Tower.o: ../Tower.cpp ../Tower.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
@@ -1467,12 +1500,6 @@ release/Tower.o: ../Tower.cpp ../Tower.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
@@ -1504,18 +1531,14 @@ release/Tower.o: ../Tower.cpp ../Tower.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsEllipseItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QPointF \
-		../Bullet.h \
-		../Enemy.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QList \
+		../Definitions.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		../Game.h \
 		../Tile.h \
 		../Button.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicssceneevent.h \
-		../Tilemap.h \
+		../Bullet.h \
+		../Enemy.h \
+		../Buttoncard.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsView \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsview.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainter.h \
@@ -1541,19 +1564,9 @@ release/Tower.o: ../Tower.cpp ../Tower.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsscene.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsScene \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsTextItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTimer \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtimer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QBrush \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QColor \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QFont \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QPixmap \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QRectF \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QLineF
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Tower.o ..\Tower.cpp
 
 release/main.o: ../main.cpp ../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
@@ -1666,23 +1679,17 @@ release/main.o: ../main.cpp ../../../../../Qt/5.15.2/mingw81_64/include/QtWidget
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
 		../Game.h \
+		../Definitions.h \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		../Tile.h \
 		../Button.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsItem \
+		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsitem.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainterpath.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsPixmapItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicssceneevent.h \
 		../Tower.h \
-		../Definitions.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsEllipseItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QPointF \
-		../Tilemap.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QList \
 		../Bullet.h \
 		../Enemy.h \
+		../Buttoncard.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsView \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsview.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpainter.h \
@@ -1692,16 +1699,9 @@ release/main.o: ../main.cpp ../../../../../Qt/5.15.2/mingw81_64/include/QtWidget
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsscene.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsScene \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QMouseEvent \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGraphicsTextItem \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QString \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTimer \
 		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtimer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QBrush \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QColor \
-		../../../../../Qt/5.15.2/mingw81_64/include/QtGui/QFont
+		../../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasictimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\main.cpp
 
 release/qrc_res.o: release/qrc_res.cpp 

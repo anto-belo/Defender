@@ -2,12 +2,10 @@
     <qresource prefix="/img">
         <file>img/AirEnemy.png</file>
         <file>img/AirTower.png</file>
-        <file>img/AirTowerBase.png</file>
         <file>img/AirTowerBullet.png</file>
         <file>img/BossEnemy.png</file>
         <file>img/SimpleEnemy.png</file>
         <file>img/SimpleTower.png</file>
-        <file>img/SimpleTowerBase.png</file>
         <file>img/SimpleTowerBullet.png</file>
         <file>img/StrongEnemy.png</file>
         <file>img/EnterTile.png</file>
@@ -27,7 +25,45 @@
         <file>img/TimerG.png</file>
         <file>img/TimerR.png</file>
         <file>img/wave.png</file>
-        <file>img/NextWaveButtonHovered.png</file>
         <file>img/NextWaveButton.png</file>
+        <file>img/NextWaveButtonBlocked.png</file>
+        <file>img/NextWaveButtonHovered.png</file>
+        <file>img/AirTowerIco.png</file>
+        <file>img/SimpleTowerIco.png</file>
+        <file>img/AirTowerIcoBlocked.png</file>
+        <file>img/AirTowerIcoHovered.png</file>
+        <file>img/SimpleTowerIcoBlocked.png</file>
+        <file>img/SimpleTowerIcoHovered.png</file>
+        <file>img/AirTile.png</file>
+        <file>img/AirTileChosen.png</file>
+        <file>img/AirTileHovered.png</file>
+        <file>img/SimpleTile.png</file>
+        <file>img/SimpleTileChosen.png</file>
+        <file>img/SimpleTileHovered.png</file>
+        <file>img/TowerTileChosen.png</file>
+        <file>img/AirTowerCharacsIco.png</file>
+        <file>img/SimpleTowerCharacsIco.png</file>
+        <file>img/UpgradeDmg.png</file>
+        <file>img/UpgradeDmgBlocked.png</file>
+        <file>img/UpgradeDmgHovered.png</file>
+        <file>img/UpgradeFireRate.png</file>
+        <file>img/UpgradeFireRateBlocked.png</file>
+        <file>img/UpgradeFireRateHovered.png</file>
+        <file>img/UpgradeRangeRadius.png</file>
+        <file>img/UpgradeRangeRadiusBlocked.png</file>
+        <file>img/UpgradeRangeRadiusHovered.png</file>
+        <file>img/UpgradeDelete.png</file>
+        <file>img/UpgradeDeleteHovered.png</file>
+        <file>img/MenuButton.png</file>
+        <file>img/MenuButtonHovered.png</file>
+        <file>img/UniTile.png</file>
+        <file>img/UniTileChosen.png</file>
+        <file>img/UniTileHovered.png</file>
+        <file>img/UniTower.png</file>
+        <file>img/UniTowerBullet.png</file>
+        <file>img/UniTowerCharacsIco.png</file>
+        <file>img/UniTowerIco.png</file>
+        <file>img/UniTowerIcoBlocked.png</file>
+        <file>img/UniTowerIcoHovered.png</file>
     </qresource>
 </RCC>

@@ -1,9 +1,9 @@
 debug/Bullet.o
 debug/Button.o
+debug/Buttoncard.o
 debug/Enemy.o
 debug/Game.o
 debug/Tile.o
-debug/Tilemap.o
 debug/Tower.o
 debug/main.o
 debug/qrc_res.o
